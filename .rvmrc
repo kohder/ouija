@@ -1,0 +1,4 @@
+rvm --create ruby-1.9.2-p290@ouija
+if [[ -s ".gems" ]] ; then
+  rvm gemset import .gems | grep -v already | grep -v listed | grep -v complete | sed '/^$/d'
+fi
