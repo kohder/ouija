@@ -6,9 +6,11 @@ PATH
 GEM
   remote: http://rubygems.org/
   specs:
+    gem-release (0.3.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  gem-release (~> 0.3.1)
   ouija!

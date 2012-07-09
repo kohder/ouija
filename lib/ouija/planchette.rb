@@ -9,7 +9,7 @@ module Ouija
 
     def [](key)
       value = @hash[key]
-      value.respond?(:dup) ? value.dup : value
+      value.respond_to?(:dup) ? value.dup : value rescue value
     end
 
     def to_hash
